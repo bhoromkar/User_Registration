@@ -4,11 +4,11 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class UserRegistration {
-    static Pattern pattern = Pattern.compile("^[A-Za-z0-9+_.-]+\\.+[A-Za-z0-9+_.-]+@(?:[a-z])+(?:\\.[a-zA-Z]{2})+(?:\\.[a-zA-Z]{2})?$");
+    static Pattern pattern = Pattern.compile("^(\\+?\\+[0-9]{1,3})+[0-9]{10}+$");
 
     public static void main(String[] args) {
-        String Email= "abc.xyz@bl.co.in";
-        Matcher matcher = pattern.matcher(Email);
+        String mobileNo= "+919890810104";
+        Matcher matcher = pattern.matcher(mobileNo);
         if (matcher.matches()) {
             System.out.println("Valid");
         }
