@@ -7,8 +7,8 @@ public class UserRegistration {
     static Pattern pattern = Pattern.compile("^[A-Z]+[a-z]{2,}+$");
 
     public static void main(String[] args) {
-        String firstName= "Abhc";
-        Matcher matcher = pattern.matcher(firstName);
+        String lastName= "Abhc";
+        Matcher matcher = pattern.matcher(lastName);
         if (matcher.matches()) {
             System.out.println("Valid");
         }
